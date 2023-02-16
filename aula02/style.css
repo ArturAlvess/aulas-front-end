@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    background-color: #000;
+    margin: 16px;
+    color: #ffffff;
+}
+
+.aluno{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(38, 38, 87);
+}
+.aluno__nota{
+    font-size: 100px;
+}
+
+.red{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(165, 46, 46);
+}
+.green{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 133, 55);
+}
