@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./img/gremiao.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    display: grid;
+    grid-template-areas:
+    "uf name"
+    "cidades cidades";
+    grid-template-columns: 
+    1fr 1.5fr;
+    grid-template-rows: 
+    1fr
+    1.25fr;
+    margin-left: 4vw;
+    width: 20vw;
+    height: 50vh;
+    background-color: #8bb6d3;
+    border: 3px solid black;
+   
+}
+.uf{
+    grid-area: uf; 
+    height: 12vh;
+    width: 12vh;
+    margin-left: 1vw;
+    margin-top: 3vh;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uf-name{
+
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+.state-name{
+    grid-area: name;
+    margin-top: 6vh;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+.capital{
+    grid-area: name;
+    padding-top: 10vh;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.regiao{
+    padding-top: 12vh;
+    grid-area: name;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.cidades{
+    
+}
+path{
+    fill: #90cbdd;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.cidades-container{
+    grid-area: cidades;
+    padding-left: 2vw;
+}
+
+path:hover{
+    fill: #1e85c9;
+    transition: .5s;
+}
